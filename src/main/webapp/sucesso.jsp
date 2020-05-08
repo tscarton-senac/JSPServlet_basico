@@ -4,6 +4,7 @@
     Author     : tiago.bscarton
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,7 +13,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Sucesso!</h1>
+        <h1>Sucesso! </h1>
+        <c:if test="${cadastroOK}">
+            <p>Cliente cadastrado com Sucesso</p>
+        </c:if>
         <a href="index.html">Início</a>
     </body>
 </html>

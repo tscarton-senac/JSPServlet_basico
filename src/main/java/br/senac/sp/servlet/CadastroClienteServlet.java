@@ -33,6 +33,7 @@ public class CadastroClienteServlet extends HttpServlet {
 
         String url = "";
         if (ok) {
+            request.setAttribute("cadastroOK", true);
             url = "/sucesso.jsp";
         } else {
             url = "/erro.jsp";
